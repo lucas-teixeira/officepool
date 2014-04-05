@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/modal.js"></script>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background-image:url('bg.png');
+        background-size: 100% 100%;
+        min-height: 900px !important;
+        overflow: hidden;
+      }
+
+      .mainDiv{
+        margin: 10% auto;
+        max-width: 400px;
+        text-align: center;
+      }
+
+      h1{
+        font-size: 32pt;
+        color: white;
+        text-transform: uppercase;
+        text-shadow: -1px 1px 3px rgba(0,0,0,0.4);
+        margin-bottom: 30px;
+      }
+
+      h3{
+        text-shadow: -1px 1px 0px rgba(255,255,255,0.4);
+        font-size: 16pt;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="mainDiv">
+    <h3>Simple challenge page developed by</h3>
+    <h1>Lucas Teixeira</h1>
+   <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Modal test</button>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            Hello World !!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
